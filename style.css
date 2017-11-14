@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'SFT';
+  src: url(assets/sft.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  -webkit-margin-before: 0em !important;
+  -webkit-margin-after: 0em !important;
+}
+html {
+  background: white;
+}
+body {
+  /*background: url(image2.jpg) no-repeat;*/
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'SFT';
+  color: #efefef;
+  padding: 0;
+  text-align: center;
+}
+#top > h1 {
+  color: black;
+  text-align: center;
+  font-size: 12em;
+}
+.main {
+  font-family: 'SFT';
+  color: black;
+  text-align: center;
+  font-weight: 100;
+  font-size: 5em;
+  display: block;
+}
+.logo {
+  height: 150px;
+}
+.boximagelogo {
+  height: 400px;
+  width: 600px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.header {
+  padding-top: 150px;
+}
+.header > * {
+  font-family: 'Josefin Slab' !important;
+  text-align: center;
+}
+.header > h1 {
+  font-size: 72px;
+  font-weight: 300
+}
+.header > .sub {
+  font-size: 36px;
+  font-weight: 100;
+}
+.contactme > * {
+  font-family: 'Arial' !important;
+  font-size: 20px;
+  font-weight: 80;
+  color: black;
+}
+.section {
+  margin-top: 5vh;
+  min-height: 100vh;
+}
+.pictures > h1, .section > h1 {
+  font-family: 'Arial' !important;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+.mySlides {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.mySlides1 {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.mySlides2 {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.mySlides3 {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.mySlides4 {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+hr {
+  border-color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: auto;
+}
+.fb {
+  width: 100%;
+}
+.collegebar {
+  background-color: #1680A0;
+  color: white
+}
+.collegebar > a {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Josefin Slab' !important;
+  color: white;
+}
+.tl, .tr > * {
+  line-height: 1.25
+}
+.mt {
+  margin-top: 100px;
+}
+.mapcrop {
+  overflow: hidden;
+}
+.bmap {
+  border-radius: 9999px;
+  height: 200px;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+img.icon {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 150px;
+  padding-bottom: 50px;
+}
+img.logos {
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+}

@@ -1,0 +1,93 @@
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100|Josefin+Slab:400,300,600,700' rel='stylesheet' type='text/css'>
+  <title>Magog Home</title>
+  <link rel="stylesheet" href="style.css" type:'text/css'/>
+</head>
+
+<body>
+  <div class="header container">
+    <img src="img/aerial.jpg" class="boximagelogo" />
+    <h1 class="main">Magog Home</h1>
+    <hr>
+  </div>
+  <div class="contactme container">
+    <h2>Incredible State of the Art Builder Home on Four Acres - $150K under Cost</h2>
+    <p>
+      <b>4 ACRES * ELEVATED SITE NEAR LAKE MEMPHREMAGOG.</b><br />Elegant home on quiet dead end in proximity of Magog downtown & The Hermitage Club. 3 bedrms + off., master suite on 1st fl., 2.5 baths. <br />Abundant fenestration, view of hills, lg. living rm + magnificient cathedral and fireplace, spacious screened-in porch. Att. garage. Lake Memphrémagog access.
+    </p>
+    <a href="https://www.remax-quebec.com/en/house-for-sale-estrie/118-rue-lachance-magog-canton-magog-19727693.rmx"><h2 class="sub">Click me for more information</h2></a>
+  </div>
+  <div class="pictures container section">
+    <h1 class="sub">Outdoor</h1>
+    <img class="mySlides" src="img/outdoor-front.jpg">
+    <img class="mySlides" src="img/outdoor-back.jpg">
+    <img class="mySlides" src="img/porch.jpg">
+    <button class="w3-button w3-display-left" class="outdoor" onclick="plusDivs(-1, 0)">&#10094;</button>
+    <button class="w3-button w3-display-right" class="outdoor" onclick="plusDivs(+1, 0)">&#10095;</button>
+    <h1 class="sub">Living Room</h1>
+    <img class="mySlides1" src="img/foyer.jpg">
+    <img class="mySlides1" src="img/living-room3.jpg">
+    <img class="mySlides1" src="img/living-room2.jpg">
+    <button class="w3-button w3-display-left" class="livingroom" onclick="plusDivs(-1, 1)">&#10094;</button>
+    <button class="w3-button w3-display-right" class="livingroom" onclick="plusDivs(+1, 1)">&#10095;</button>
+    <h1 class="sub">Kitchen</h1>
+    <img class="mySlides2" src="img/kitchen.jpg">
+    <img class="mySlides2" src="img/kitchen-bar.jpg">
+    <img class="mySlides2" src="img/dining-room.jpg">
+    <button class="w3-button w3-display-left" class="kitchen" onclick="plusDivs(-1, 2)">&#10094;</button>
+    <button class="w3-button w3-display-right" class="kitchen" onclick="plusDivs(+1, 2)">&#10095;</button>
+    <h1 class="sub">3 Bedrooms</h1>
+    <img class="mySlides3" src="img/bedroom-1.jpg">
+    <img class="mySlides3" src="img/bedroom-2.jpg">
+    <img class="mySlides3" src="img/2bedroom.jpg">
+    <button class="w3-button w3-display-left" class="3bedrooms" onclick="plusDivs(-1, 3)">&#10094;</button>
+    <button class="w3-button w3-display-right" class="3bedrooms" onclick="plusDivs(+1, 3)">&#10095;</button>
+    <h1 class="sub">Bathrooms</h1>
+    <img class="mySlides4" src="img/bathroom-1.jpg">
+    <img class="mySlides4" src="img/bathroom-2.jpg">
+    <img class="mySlides4" src="img/bathroom-3.jpg">
+    <button class="w3-button w3-display-left" class="bathrooms" onclick="plusDivs(-1, 4)">&#10094;</button>
+    <button class="w3-button w3-display-right" class="bathrooms" onclick="plusDivs(+1, 4)">&#10095;</button>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex, 0);
+showDivs(slideIndex, 1);
+showDivs(slideIndex, 2);
+showDivs(slideIndex, 3);
+showDivs(slideIndex, 4);
+
+function plusDivs(n, y) {
+  showDivs(slideIndex += n, y);
+}
+
+function showDivs(n, y) {
+  var i;
+  switch (y) {
+    case 0:
+      var x = document.getElementsByClassName("mySlides");
+      break;
+    case 1:
+      var x = document.getElementsByClassName("mySlides1");
+      break;
+    case 2:
+      var x = document.getElementsByClassName("mySlides2");
+      break;
+    case 3:
+      var x = document.getElementsByClassName("mySlides3");
+      break;
+    case 4:
+      var x = document.getElementsByClassName("mySlides4");
+      break;
+  }
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
