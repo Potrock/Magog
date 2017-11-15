@@ -1,93 +1,301 @@
-<html>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100|Josefin+Slab:400,300,600,700' rel='stylesheet' type='text/css'>
-  <title>Magog Home</title>
-  <link rel="stylesheet" href="style.css" type:'text/css'/>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magog Home</title>
+    <meta name="description" content="Magog Home">
 
-<body>
-  <div class="header container">
-    <img src="img/aerial.jpg" class="boximagelogo" />
-    <h1 class="main">Magog Home</h1>
-    <hr>
-  </div>
-  <div class="contactme container">
-    <h2>Incredible State of the Art Builder Home on Four Acres - $150K under Cost</h2>
-    <p>
-      <b>4 ACRES * ELEVATED SITE NEAR LAKE MEMPHREMAGOG.</b><br />Elegant home on quiet dead end in proximity of Magog downtown & The Hermitage Club. 3 bedrms + off., master suite on 1st fl., 2.5 baths. <br />Abundant fenestration, view of hills, lg. living rm + magnificient cathedral and fireplace, spacious screened-in porch. Att. garage. Lake Memphrémagog access.
-    </p>
-    <a href="https://www.remax-quebec.com/en/house-for-sale-estrie/118-rue-lachance-magog-canton-magog-19727693.rmx"><h2 class="sub">Click me for more information</h2></a>
-  </div>
-  <div class="pictures container section">
-    <h1 class="sub">Outdoor</h1>
-    <img class="mySlides" src="img/outdoor-front.jpg">
-    <img class="mySlides" src="img/outdoor-back.jpg">
-    <img class="mySlides" src="img/porch.jpg">
-    <button class="w3-button w3-display-left" class="outdoor" onclick="plusDivs(-1, 0)">&#10094;</button>
-    <button class="w3-button w3-display-right" class="outdoor" onclick="plusDivs(+1, 0)">&#10095;</button>
-    <h1 class="sub">Living Room</h1>
-    <img class="mySlides1" src="img/foyer.jpg">
-    <img class="mySlides1" src="img/living-room3.jpg">
-    <img class="mySlides1" src="img/living-room2.jpg">
-    <button class="w3-button w3-display-left" class="livingroom" onclick="plusDivs(-1, 1)">&#10094;</button>
-    <button class="w3-button w3-display-right" class="livingroom" onclick="plusDivs(+1, 1)">&#10095;</button>
-    <h1 class="sub">Kitchen</h1>
-    <img class="mySlides2" src="img/kitchen.jpg">
-    <img class="mySlides2" src="img/kitchen-bar.jpg">
-    <img class="mySlides2" src="img/dining-room.jpg">
-    <button class="w3-button w3-display-left" class="kitchen" onclick="plusDivs(-1, 2)">&#10094;</button>
-    <button class="w3-button w3-display-right" class="kitchen" onclick="plusDivs(+1, 2)">&#10095;</button>
-    <h1 class="sub">3 Bedrooms</h1>
-    <img class="mySlides3" src="img/bedroom-1.jpg">
-    <img class="mySlides3" src="img/bedroom-2.jpg">
-    <img class="mySlides3" src="img/2bedroom.jpg">
-    <button class="w3-button w3-display-left" class="3bedrooms" onclick="plusDivs(-1, 3)">&#10094;</button>
-    <button class="w3-button w3-display-right" class="3bedrooms" onclick="plusDivs(+1, 3)">&#10095;</button>
-    <h1 class="sub">Bathrooms</h1>
-    <img class="mySlides4" src="img/bathroom-1.jpg">
-    <img class="mySlides4" src="img/bathroom-2.jpg">
-    <img class="mySlides4" src="img/bathroom-3.jpg">
-    <button class="w3-button w3-display-left" class="bathrooms" onclick="plusDivs(-1, 4)">&#10094;</button>
-    <button class="w3-button w3-display-right" class="bathrooms" onclick="plusDivs(+1, 4)">&#10095;</button>
-  </div>
-</body>
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Home Section -->
+    <div id="home">
+        <div class="container text-center">
+
+            <div class="content">
+                <h4>State of the Art Builder Home on Four Acres</h4>
+                <hr>
+                <div class="header-text btn">
+                    <h1><span id="head-title">Incredible Magog Home</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Photos</h2>
+                        <hr>
+                    </div>
+                    <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p> -->
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <p class="lead">Outdoor</p>
+                                    <div class="hline"></div>
+                                </div>
+                                <img src="img/outdoor-back.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <p class="lead">Living Room</p>
+                                    <div class="hline"></div>
+                                </div>
+                                <img src="img/living-room.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <p class="lead">Kitchen</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="img/kitchen-bar.jpg" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <p class="lead">Bedrooms</p>
+                                    <div class="hline"></div>
+                                </div>
+                            </a>
+                            <img src="img/bedroom-1.jpg" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clients Section -->
+    <div id="clients">
+        <div class="overlay">
+            <div class="container text-center">
+                <div class="section-title">
+                    <h2>Information</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2 style="font-size: 18px">Elegant home on quiet dead end in proximity of Magog downtown & The Hermitage Club. 3 bedrms + off., master suite on 1st fl., 2.5 baths.</h2>
+                        <hr>
+                    </div>
+                  </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-10 col-sm-10">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/02.jpg" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Lian Gwapa</h4>
+                                <p class="small">CEO/Founder</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/04.jpg" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Jenn Pereira</h4>
+                                <p class="small">Web Coder</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/03.jpg" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Alan Podemski</h4>
+                                <p class="small">Web Designer</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#contact" class="page-scroll down-btn">
+                    <span class="fa fa-angle-down"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Testimonial Section -->
+    <div id="testimonials">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What my Clients Say...</h2>
+                    <hr>
+                </div>
+
+                <div id="testimonial" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <h3>Et iusto odio dignissimos ducimus qui blanditiis <br>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br>occaecati cupiditate non provident. </h3>
+                    <br>
+                    <h6>LJ, Abc Company</h6>
+                  </div>
+
+                  <div class="item">
+                    <h3>Fusce dapibus, tellus ac cursus commodo, tortor<br> mauris condimentum. Duis mollis, est non commodo luctus, nisi erat </h3>
+                    <br>
+                    <h6>Kai, Web Geekster</h6>
+                  </div>
+
+                  <div class="item">
+                    <h3>Cras justo odio, dapibus ac facilisis in, egestas <br>eget quam. Donec id elit non mi porta gravida at eget metus.</h3>
+                    <br>
+                    <h6>Jenn, Coders' Playground</h6>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <div class="space"></div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <address>
+                        <strong>Address</strong><br>
+                        <br>
+                        ThemeForces.Com<br>
+                        Igbalangao, Bugasong, Anitque<br>
+                        5704, Philippines<br>
+                        Phone: (123) 456-7890
+                        <ul class="social">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                          </ul>
+                    </address>
+                </div>
+
+                <div class="col-md-9">
+                    <form autocomplete="off">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Phone No.">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        <div class="text-right">
+                            <a href="#" class="btn send-btn">Send</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="footer">
+        <div class="container">
+             <div class="pull-left">
+                <p>2014 © Arcadia. All Rights Reserved. Coded by <a href="https://dribbble.com/jennpereira">Jenn</a> & Designed by <a href="https://dribbble.com/alanpodemski">Alan</a></p>
+            </div>
+            <div class="pull-right">
+                <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
 </html>
-<script type="text/javascript">
-var slideIndex = 1;
-showDivs(slideIndex, 0);
-showDivs(slideIndex, 1);
-showDivs(slideIndex, 2);
-showDivs(slideIndex, 3);
-showDivs(slideIndex, 4);
-
-function plusDivs(n, y) {
-  showDivs(slideIndex += n, y);
-}
-
-function showDivs(n, y) {
-  var i;
-  switch (y) {
-    case 0:
-      var x = document.getElementsByClassName("mySlides");
-      break;
-    case 1:
-      var x = document.getElementsByClassName("mySlides1");
-      break;
-    case 2:
-      var x = document.getElementsByClassName("mySlides2");
-      break;
-    case 3:
-      var x = document.getElementsByClassName("mySlides3");
-      break;
-    case 4:
-      var x = document.getElementsByClassName("mySlides4");
-      break;
-  }
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
